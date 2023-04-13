@@ -1,0 +1,62 @@
+.form-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.progressbar{
+    height: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.num{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid grey;
+    text-align: center;
+    color: black;
+}
+.num1{
+    background: blue;
+    color: white;
+}
+.line{
+    height: .25%;
+    width: 42%;
+    border: .25px solid grey;
+    margin: 2% auto 0;
+    background: grey;
+}
+.form{
+    height: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+input{
+    height: 5%;
+    width: 20%;
+    background: seashell;
+    margin: 1%;
+}
+button{
+    height: 30px;
+    width: 60px;
+    background: blue;
+    color: white;
+}
+#gender{
+    height: 5%;
+    width: 5%;
+    background: seashell;
+}
+select{
+    height: 5%;
+    width: 10%;
+    background: seashell;
+    margin: 1%;
+}

@@ -1,0 +1,14 @@
+.summary{
+    height: 700px;
+    width: 600px;
+    border: 2px solid grey;
+    background: silver;
+    color: blue;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: larger;
+}
+h3{
+    text-align: center;
+}

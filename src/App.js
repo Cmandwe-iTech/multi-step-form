@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import logo from './logo.svg';
+// import './App.css';
+import { Routes, Route } from "react-router-dom";
+import BasicInfo from "./components/basic";
+import SocialInfo from "./components/social";
+import PersonalInfo from "./components/personal";
+import Summary from "./components/summary";
+import FromProvider from "./contextapi/conextprovider";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FromProvider>
+      <Routes>
+        <Route path="/" element={<BasicInfo />} />
+        <Route path="/socialinfo" element={<SocialInfo />} />
+        <Route path="/personalinfo" element={<PersonalInfo />} />
+        <Route path="/summary" element={<Summary />} />
+      </Routes>
+    </FromProvider>
   );
 }
 
